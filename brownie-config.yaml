@@ -1,0 +1,20 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.9.0
+compiler:
+  solc:
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.9.0"
+
+dotenv: .env
+
+wallets:
+  from_key: ${PRIVATE_KEY}
+
+networks:
+  sepolia:
+    chainid: 11155111
+    explorer: https://api-sepolia.etherscan.io/api
+    host: https://eth-sepolia.g.alchemy.com/v2/lZcfoBVDPVF6dasn3OZrbrfS8RaN-Xef
+    id: sepolia
+    name: Sepolia
+    provider: alchemy
